@@ -1,0 +1,26 @@
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(9600);  // Initialize serial communication
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  // Check the input command
+  String input = "";  // Assuming 'input' is a String variable
+
+  // Assuming you read the input from somewhere, for example, Serial input
+  if (Serial.available() > 0) {
+    input = Serial.readString();  // Read the input as a string
+  }
+
+  // Turn on the LED
+  if (input == "off") {
+    digitalWrite(LED_BUILTIN, HIGH);
+  } else if (input == "on") {
+    digitalWrite(LED_BUILTIN, LOW);
+  } else {
+    Serial.println("Unknown command: " + input);
+  }
+}
