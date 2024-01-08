@@ -1,4 +1,5 @@
-NICLA VISION with Arduino programming Hands-on
+# NICLA VISION with Arduino programming Hands-on
+
 
 Task 1 "blink_afap": Blink the builtin led as fast as possible
 Task 2 "acceleration_detector": Blink the LED faster if a stronger acceleration is detected
