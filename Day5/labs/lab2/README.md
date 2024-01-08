@@ -1,2 +1,2 @@
-#NICLA VISION + MQTT Hands-on
+NICLA VISION + MQTT Hands-on
 
